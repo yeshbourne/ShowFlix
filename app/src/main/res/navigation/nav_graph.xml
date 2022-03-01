@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/showsFragment">
+
+    <fragment
+        android:id="@+id/showsFragment"
+        android:name="com.yb.showflix.ui.ShowsFragment"
+        android:label="fragment_shows_list"
+        tools:layout="@layout/fragment_shows_list" >
+        <action
+            android:id="@+id/action_showsFragment_to_showsDetailFragment"
+            app:destination="@id/showsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showsDetailFragment"
+        android:name="com.yb.showflix.ui.ShowsDetailFragment"
+        android:label="fragment_shows_detail"
+        tools:layout="@layout/fragment_shows_detail" />
+</navigation>
